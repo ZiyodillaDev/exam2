@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam-2</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <header class="sticky-top" id="navbar">
+    <div class="container-sm">
+      <nav id="navbar-example2" class="navbar navbar-expand-lg justify-content-between">
+        <div class="d-flex align-items-center gap-2">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+          <a class="fw-bold text-white navbar-brand" href="#">Ziyodilla</a>
+        </div>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" data-offset="0">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start d-flex w-75 flex-lg-row align-items-center" tabindex="-1"
+            id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header px-sm-5">
+              <div class="d-flex gap-2"> <a href="#" class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="./images/logo.png" alt="logo" />
+                </a>
+                <a class="fw-bold text-white navbar-brand" href="#">Ziyodilla</a></div>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <ul class="gap-4 nav nav-pills px-sm-2 ">
+              <li class="nav__item">
+                <a class="nav__link active text-white-50" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link text-white-50" href="#about">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link text-white-50" href="#service">Service</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link text-white-50" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link text-white-50" href="#blog">Blog</a>
+              </li>
+            </ul>
+            <a href="tel:+998995252284"
+              class="btn__call py-3 px-5 text-white d-block d-lg-none mt-4 w-75 d-flex justify-content-center fs-3">Contact</a>
+          </div>
+        </div>
+        <div class="btn d-none d-lg-block">
+          <a href="tel:+998995252284" class="btn__call py-3 px-5 text-white ">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" tabindex="0">
+      <section data-aos="fade-up" data-aos-duration="3000" id="home">
+        <div class="container-sm">
+          <div class="row home">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <div class="left">
+                <p class="left__name py-3 px-4 text-white">Hey, I’m Ziyodilla</p>
+                <h1 class="left__title fw-bold text-white">Building Digital
+                  Products, Brands
+                  & Experience</h1>
+                <p class="text-white-50">A Product Design and Visual Designer in SF I”m Specialize in
+                  UI/UX, Responsive web design, and visual Development. </p>
+                <div class="links d-flex align-items-center gap-5">
+                  <button class="btn1">Hire Me</button>
+                  <a class="text-white" href="#portfolio">My Work</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <div class="rigth">
+                <img class="rigth__img" src="./images/hero-img.jpg" alt="hero-img">
+              </div>
+            </div>
+          </div>
+          <div class="statittic">
+            <div class="col-12 statistics bg-white">
+              <h5 class="statistics__title pt-5 pb-4">STATISTIC</h5>
+              <div class="d-flex statistics__box">
+                <div class="statistics__list d-flex flex-column align-items-center">
+                  <h2 class="statistics__item">300+</h2>
+                  <p class="text-center">Project Delivery</p>
+                </div>
+                <div class="statistics__list d-flex flex-column align-items-center">
+                  <h2 class="statistics__item">8</h2>
+                  <p class="text-center">Years Experience</p>
+                </div>
+                <div class="statistics__list d-flex flex-column align-items-center">
+                  <h2 class="statistics__item">16</h2>
+                  <p class="text-center">Awards</p>
+                </div>
+                <div class="statistics__list d-flex flex-column align-items-center">
+                  <h2 class="statistics__item">70+</h2>
+                  <p class="text-center">Happy Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-aos="zoom-in-up" data-aos-duration="3000" id="service">
+        <div class="container-sm ">
+          <div class="d-flex flex-column service align-items-center">
+            <h6 class="text-center service__name">Services</h6>
+            <h2 class="text-center service__title pt-2">Building Digital Product
+              With Better Experience</h2>
+          </div>
+          <div class="row pt-5 align-items-center">
+            <div class="col-12 col-sm-6 col-lg-3 parent">
+              <div class="card">
+                <div class="out">
+                  <img src="./images/service1.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold pt-2">UI/UX Design</h5>
+                  <p class="card-text pb-3">I’ve created a user interface and user experience with some proccess and
+                    method.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0 parent">
+              <div class="card">
+                <div class="out">
+                  <img src="./images/service2.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold pt-2">Web Development</h5>
+                  <p class="card-text pb-3">I’ve created a user interface and user experience with some proccess and
+                    method.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0 parent">
+              <div class="card">
+                <div class="out"><img src="./images/service3.svg" class="card-img-top" alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold pt-2">Web Development</h5>
+                  <p class="card-text pb-3">I’ve created a user interface and user experience with some proccess and
+                    method.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0 parent">
+              <div class="card">
+                <div class="out"><img src="./images/service1.svg" class="card-img-top" alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold pt-2">App Development</h5>
+                  <p class="card-text pb-3">I’ve created a user interface and user experience with some proccess and
+                    method.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-aos="fade-up" data-aos-duration="2000" id="portfolio">
+        <div class="container-sm">
+          <div class="portfolio">
+            <h2 class="portfolio__title">Featured My Portfolio</h2>
+            <p class="text-black-50 portfolio__text pt-2 pb-5">Explore some of my latest website projects. Non suscipit
+              ex blandit
+              vitae. Pellentesque vel urna id massa sagittis luctus Fusce iaculis.</p>
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-md-6 work">
+                <div class="site">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none" href="https://homework21-by-ziyodilla.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://homework21-by-ziyodilla.netlify.app/">Read Case Study</a>
+                    <a href="https://homework21-by-ziyodilla.netlify.app/"><img class="right-button"
+                        src="./images/right.svg" alt="right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-4 pt-md-0 work">
+                <div class="site site2">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none" href="https://jaylay-dinero-by-ziyodilla.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://jaylay-dinero-by-ziyodilla.netlify.app/">Read Case Study</a>
+                    <a href="https://jaylay-dinero-by-ziyodilla.netlify.app/"><img class="right-button"
+                        src="./images/right.svg" alt="right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-4 work">
+                <div class="site site3">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none"
+                      href="https://635cc9c5c22353208b583ae4--instagramm-by-ziyodillas-team.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://635cc9c5c22353208b583ae4--instagramm-by-ziyodillas-team.netlify.app/">Read Case
+                      Study</a>
+                    <a href="https://635cc9c5c22353208b583ae4--instagramm-by-ziyodillas-team.netlify.app/"><img
+                        class="right-button" src="./images/right.svg" alt="right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-4 work">
+                <div class="site site4">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none"
+                      href="https://imperator-site-by-ziyodilla-team.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://imperator-site-by-ziyodilla-team.netlify.app/">Read Case Study</a>
+                    <a href="https://imperator-site-by-ziyodilla-team.netlify.app/"><img class="right-button"
+                        src="./images/right.svg" alt="right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-4 work">
+                <div class="site site5">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none" href="https://finsweet-by-ziyodillas-team.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://finsweet-by-ziyodillas-team.netlify.app/">Read Case Study</a>
+                    <a href="https://finsweet-by-ziyodillas-team.netlify.app/"><img class="right-button"
+                        src="./images/right.svg" alt="right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-4 work">
+                <div class="site site6">
+                  <div class="d-flex justify-content-center into">
+                    <a class="bg-white px-5 py-3 d-none" href="https://grid-by-ziyodilla.netlify.app/">View
+                      Project</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <h3 class="pt-5">Website Design</h3>
+                  <p class="text-black-50">Our website designers have penetrated the mysteries of
+                    emotional response to color, image, and eye-tracking.
+                    Every element is geared to create maximum appeal.</p>
+                  <div class="toright d-flex gap-2">
+                    <a href="https://grid-by-ziyodilla.netlify.app/">Read Case Study</a>
+                    <a href="https://grid-by-ziyodilla.netlify.app/"><img class="right-button" src="./images/right.svg"
+                        alt="right"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog">
+        <div id="carousel">
+          <div class="container-sm carousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-interval="10000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-item-card d-md-flex">
+                    <div class="carousel-left">
+                      <img src="./images/carousel-img.jpg" class="d-block w-100 w-lg-50" alt="..." />
+                      <h3 class="pt-5">
+                        How This Agency Helped My Business And Career Journey?
+                      </h3>
+                      <p class="text-black-50">
+                        A successful marketing plan relies heavily on the pulling-power of advertising
+                        copy. writing result-oriented ad copy is dificult, as it must appeal to, entice,
+                        and onviced consumers tp action.
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div class="categories">
+                          <a class="text-black-50 px-3 py-3" href="#">PUBLISHED IN</a>
+                          <a class="text-black-50 px-3 py-3" href="#">MARKETING</a>
+                          <a class="text-black-50 px-3 py-3" href="#">CATEGORY</a>
+                        </div>
+                        <div>
+                          <p class="text-black-50 date">05 jun, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item-content w-100 w-lg-50 pt-2">
+                      <h2 class="fw-bold">
+                        My Blog
+                        And News
+                      </h2>
+                      <p class="text-black-50 pt-4 pb-5">
+                        If It’s abillboard ad, you’ll need a super
+                        catchy headline due to the speed at
+                        which people will pass.
+                      </p>
+                      <a href="https://t.me/ZIYODILLAKHUJA">Go To The Blog</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-card d-md-flex">
+                    <div class="carousel-left">
+                      <img src="./images/carousel-img2.jpg" class="d-block w-100 w-lg-50" alt="..." />
+                      <h3 class="pt-5">
+                        How This Agency Helped My Business And Career Journey?
+                      </h3>
+                      <p class="text-black-50">
+                        A successful marketing plan relies heavily on the pulling-power of advertising
+                        copy. writing result-oriented ad copy is dificult, as it must appeal to, entice,
+                        and onviced consumers tp action.
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div class="categories">
+                          <a class="text-black-50 px-3 py-3" href="#">PUBLISHED IN</a>
+                          <a class="text-black-50 px-3 py-3" href="#">MARKETING</a>
+                          <a class="text-black-50 px-3 py-3" href="#">CATEGORY</a>
+                        </div>
+                        <div>
+                          <p class="text-black-50 date">05 jun, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item-content w-100 w-md-50 pt-2 ">
+                      <h2 class="fw-bold">
+                        My Blog
+                        And News
+                      </h2>
+                      <p class="text-black-50 pt-4 pb-5">
+                        If It’s abillboard ad, you’ll need a super
+                        catchy headline due to the speed at
+                        which people will pass.
+                      </p>
+                      <a href="https://t.me/ZIYODILLAKHUJA">Go To The Blog</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-card d-md-flex">
+                    <div class="carousel-left">
+                      <img class="d-block w-100 w-lg-50" src="./images/blog3.webp" alt="..." />
+                      <h3 class="pt-5">
+                        How This Agency Helped My Business And Career Journey?
+                      </h3>
+                      <p class="text-black-50">
+                        A successful marketing plan relies heavily on the pulling-power of advertising
+                        copy. writing result-oriented ad copy is dificult, as it must appeal to, entice,
+                        and onviced consumers tp action.
+                      </p>
+                      <div class="d-flex justify-content-between">
+                        <div class="categories">
+                          <a class="text-black-50 px-3 py-3" href="#">PUBLISHED IN</a>
+                          <a class="text-black-50 px-3 py-3" href="#">MARKETING</a>
+                          <a class="text-black-50 px-3 py-3" href="#">CATEGORY</a>
+                        </div>
+                        <div>
+                          <p class="text-black-50 date">05 jun, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item-content w-100 w-md-50 pt-2 ">
+                      <h2 class="fw-bold">
+                        My Blog
+                        And News
+                      </h2>
+                      <p class="text-black-50 pt-4 pb-5">
+                        If It’s abillboard ad, you’ll need a super
+                        catchy headline due to the speed at
+                        which people will pass.
+                      </p>
+                      <a href="https://t.me/ZIYODILLAKHUJA">Go To The Blog</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <hr>
+  <footer>
+    <div class="container-sm">
+      <div class="footer row">
+        <div
+          class="social-medias col-12 col-sm-6 col-lg-5 d-flex flex-column align-items-center"
+        >
+          <div class="d-flex align-items-center gap-2">
+            <a href="#"><img  src="./images/flogo.png" alt="logo"></a>
+            <a class="fw-bold fs-3 logo" href="#">Ziyodilla</a>
+          </div>
+          <p class="lorem mt-4 text-black-50">
+            Lorem ipsum dolor sit amet, consectetur <br />
+            adipiscing elit. Lectus mattis nunc <br />
+            aliquam tincidunt est non.
+          </p>
+          <div class="contact-me gap-3 d-flex mb-5">
+            <a
+              href="https://www.facebook.com/ibrohim.raximov.927/"
+              target="_blank"
+            >
+              <img src="./images/facebook-logo.png" alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/raximov.858/" target="_blank">
+              <img src="./images/instagram-logo.png" alt="instagram" />
+            </a>
+            <a href="https://github.com/Mibrohimbek" target="_blank">
+              <img
+                src="./images/icone-github-grise.png"
+                alt="github"
+                class="github-icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-ibrohim-rahimov-20240a22a/"
+              
+            >
+              <img src="./images/linkedin-logo.png" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+        <div class="pages col-12 col-sm-6 col-lg-2 mb-5 d-flex flex-column align-items-center">
+          <h5>Pages</h5>
+          <a class="pt-3" href="#home">Home</a><br />
+          <a href="#about">About</a><br />
+          <a href="#service">Service</a><br />
+          <a href="#portfolio">Portfolio</a><br />
+          <a href="#blog">Blog</a><br />
+        </div>
+        <div
+          class="services col-12 col-sm-6 col-lg-2 mb-5 d-flex flex-column align-items-center"
+        >
+          <h5>Services</h5>
+          <a class="pt-3" href="#">Web Design</a> <br />
+          <a href="#">App Design</a><br />
+          <a href="#">Dashboard</a><br />
+          <a href="#">Illustration</a><br />
+          <a href="#">Development</a><br />
+        </div>
+        <div
+          class="contact col-12 col-sm-6 col-lg-3 mb-5 d-flex flex-column align-items-center"
+        >
+          <h5>Contact</h5>
+          <a class="pt-3" href="tel:+998995252284">+998 99 525-22-84</a><br />
+          <a href="mailto:ziyodillazokirkhujayev@gmail.com" target="_blank"
+            >ziyodillazokirkhujayev@gmail.com</a
+          ><br />
+          <a
+            href="https://github.com/Mibrohimbek/control-work"
+            target="_blank"
+            >www.portfolio.com</a
+          ><br />
+          <address>
+            <a href="https://goo.gl/maps/bzSXT1CkADw9AmSk8" target="_blank">
+              Tashkent , Uzbekistan</a
+            ><br />
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (document.documentElement.scrollTop > 100) {
+        document.getElementById("navbar").classList.add("navbar-shrink");
+      } else {
+        document.getElementById("navbar").classList.remove("navbar-shrink");
+      }
+    }
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

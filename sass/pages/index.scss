@@ -1,0 +1,283 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../base/reset";
+@import "../layout/footer";
+@import "../layout/header";
+
+.btn-close:focus,.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  }
+
+body {
+  background: #E5E5E5;
+}
+
+#home {
+  background: $header-main;
+
+  @media screen and(max-width:990.999px) {
+    .home {
+      display: flex;
+      flex-direction: column-reverse !important;
+    }
+  }
+
+  .left {
+    padding-top: 130px;
+
+    @media screen and (min-width:990.999px) {
+      padding-bottom: 200px;
+    }
+
+    &__name {
+      background: $call-btn;
+      font-family: 'Schoolbell', cursive;
+      display: inline-block;
+      border-radius: 30px;
+    }
+
+    &__title {
+      max-width: 480px;
+      font-size: 56px;
+      line-height: 80px;
+      @media screen and (max-width:320px) {
+        font-size: 26px;
+      }
+    }
+
+    & .links {
+      padding-bottom: 170px;
+    }
+
+    & p {
+      max-width: 500px;
+    }
+  }
+
+  .rigth {
+    padding-top: 40px;
+
+    &__img {
+      max-width: 600px;
+      width: 100%;
+      height: 590px;
+      border-radius: 10px;
+    }
+  }
+
+  .statittic {
+    position: relative;
+  }
+
+  .statistics {
+    @media screen and(max-width:990.999px) {
+      padding: 0 10px;
+    }
+
+    @media screen and(max-width:690px) {
+      .statistics__box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .statistics__title {
+        text-align: center;
+      }
+    }
+
+    padding: 0 170px;
+    position: absolute;
+    top: -110px;
+
+    &__title {
+      color: $call-btn;
+    }
+
+    &__box {
+      gap: 90px;
+    }
+
+    &__list {
+      padding-bottom: 30px;
+    }
+
+    &__item {
+      color: $call-btn;
+    }
+
+    & p {
+      color: $call-btn;
+    }
+  }
+}
+
+
+#service {
+  padding-top: 220px;
+  padding-bottom: 150px;
+  @media screen and (max-width:690px) {
+  padding-top: 500px;
+  }
+
+  .service {
+    &__name {
+      color: $call-btn;
+      font-family: 'Schoolbell', cursive;
+      font-size: 22px;
+    }
+
+    &__title {
+      color: $header-main;
+      max-width: 500px;
+    }
+  }
+  .card{
+    min-width: 260px;
+    position: relative;
+    width: 100%;
+   & .out{
+    width: 50px;
+    height: 50px;
+    background-color: #F5FBFC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+
+    & img{
+      width: 25px;
+      height: 25px;
+    }
+    & h5{
+      display: inline-block;
+      font-size: 22px;
+      margin-left: 5px;
+    }
+    & p{
+      padding-left: 5px;
+      color: #696969 !important;
+    }
+    &:hover{
+      .card-body,.out{
+        z-index: 2;
+      
+      & h5{
+        color: white;
+      }
+    }
+    .out{
+      background: $btn-color;
+    }
+    }
+  }
+  .card:before{
+    content: "";
+  position: absolute;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: height 1s ease-out;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    $header-main -10.96%,
+    $header-main 100%
+  );
+}
+.card:hover:before{
+  height: 100%;
+
+}
+}
+
+#portfolio{
+  padding-top: 50px;
+  padding-bottom: 200px;
+  & .portfolio{
+    &__title{
+      color: $header-main;
+      font-size: 40px;
+    }
+    &__text{
+      max-width: 550px;
+    }
+  }
+  & .site{
+    position: relative;
+    background-image: url("../../images/work1.png");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    background-position: center;
+    & a{
+      transform: translate(3%, 300%);
+      border-radius: 30px;
+      transition: $control-transition-time;
+    }
+      &.into{
+      z-index: 2;
+      }
+      &:hover{
+        a {
+          display: block !important;
+            }
+      }
+  }
+  & .site2{
+    background-image: url("../../images/work2.png");
+  }
+  & .site3{
+    background-image: url("../../images/work3.png");
+  }
+  & .site4{
+    background-image: url("../../images/work4.png");
+  }
+  & .site5{
+    background-image: url("../../images/work5.png");
+  }
+  & .site6{
+    background-image: url("../../images/work6.png");
+  }
+  & .work{
+    & .inner{
+      padding: 0 30px;
+    }
+    &h3,a{
+      color: $header-main;
+    }
+    & a:hover{
+      color: $btn-color;
+    }
+   & p{
+    max-width: 426px;
+   }
+  }
+  .site:before{
+    content: "";
+  position: absolute;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: height 0.8s ease-out;
+  background: linear-gradient(
+    to top,
+    transparent -4%,
+    #fa197f -10.96%,
+    #fa197f 100%
+  );
+}
+.site:hover:before{
+  height: 100%;
+}
+}
+
+#blog{
+  padding-bottom: 100px;
+}

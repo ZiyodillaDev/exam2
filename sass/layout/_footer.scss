@@ -1,0 +1,29 @@
+footer{
+    padding-top: 50px;
+    background: #E5E5E5;
+        a{
+            color: #787878;
+            display: inline-block;
+
+            &:hover{
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        .social-medias{
+            .logo{
+                color: $header-main;
+            }
+           
+            .contact-me{
+                margin-top: 50px;
+                
+                .github-icon{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+        }
+}

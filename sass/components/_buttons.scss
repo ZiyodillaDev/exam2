@@ -1,0 +1,20 @@
+button {
+  border: none;
+}
+
+.btn1 {
+  background: $btn-color;
+  border-radius: 25px;
+  width: 140px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn2 {
+  background: $btn-color;
+  border-radius: 30px;
+  width: 191px;
+  height: 61px;
+  cursor: pointer;
+}
