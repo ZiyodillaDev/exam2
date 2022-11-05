@@ -19,11 +19,10 @@ footer{
             .contact-me{
                 margin-top: 50px;
                 
-                .github-icon{
-                    width: 35px;
-                    height: 35px;
-                }
             }
-
+        }
+        & img{
+            width: 35px;
+            height: 30px;
         }
 }

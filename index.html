@@ -297,7 +297,7 @@
           </div>
         </div>
       </section>
-      <section id="blog">
+      <section data-aos="fade-up" data-aos-duration="3000" id="blog">
         <div id="carousel">
           <div class="container-sm carousel-container">
             <div id="carouselExampleControls" class="carousel slide" data-interval="10000">
@@ -433,11 +433,9 @@
   <footer>
     <div class="container-sm">
       <div class="footer row">
-        <div
-          class="social-medias col-12 col-sm-6 col-lg-5 d-flex flex-column align-items-center"
-        >
+        <div class="social-medias col-12 col-sm-6 col-lg-5 d-flex flex-column align-items-center">
           <div class="d-flex align-items-center gap-2">
-            <a href="#"><img  src="./images/flogo.png" alt="logo"></a>
+            <a href="#"><img src="./images/flogo.png" alt="logo"></a>
             <a class="fw-bold fs-3 logo" href="#">Ziyodilla</a>
           </div>
           <p class="lorem mt-4 text-black-50">
@@ -446,27 +444,17 @@
             aliquam tincidunt est non.
           </p>
           <div class="contact-me gap-3 d-flex mb-5">
-            <a
-              href="https://www.facebook.com/ibrohim.raximov.927/"
-              target="_blank"
-            >
-              <img src="./images/facebook-logo.png" alt="facebook" />
+            <a href="https://www.facebook.com/profile.php?id=100087390045959" target="_blank">
+              <img src="./images/facebook.svg" alt="facebook" />
             </a>
-            <a href="https://www.instagram.com/raximov.858/" target="_blank">
-              <img src="./images/instagram-logo.png" alt="instagram" />
+            <a href="https://www.instagram.com/ziyodilla_khujayev/" target="_blank">
+              <img src="./images/instagram.svg" alt="instagram" />
             </a>
-            <a href="https://github.com/Mibrohimbek" target="_blank">
-              <img
-                src="./images/icone-github-grise.png"
-                alt="github"
-                class="github-icon"
-              />
+            <a href="https://github.com/ZiyodillaDev" target="_blank">
+              <img src="./images/github.svg" alt="github" class="github-icon" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/muhammad-ibrohim-rahimov-20240a22a/"
-              
-            >
-              <img src="./images/linkedin-logo.png" alt="linkedin" />
+            <a href="https://t.me/ZIYODILLAKHUJA">
+              <img src="./images/telegram.svg" alt="telegram" />
             </a>
           </div>
         </div>
@@ -478,9 +466,7 @@
           <a href="#portfolio">Portfolio</a><br />
           <a href="#blog">Blog</a><br />
         </div>
-        <div
-          class="services col-12 col-sm-6 col-lg-2 mb-5 d-flex flex-column align-items-center"
-        >
+        <div class="services col-12 col-sm-6 col-lg-2 mb-5 d-flex flex-column align-items-center">
           <h5>Services</h5>
           <a class="pt-3" href="#">Web Design</a> <br />
           <a href="#">App Design</a><br />
@@ -488,23 +474,14 @@
           <a href="#">Illustration</a><br />
           <a href="#">Development</a><br />
         </div>
-        <div
-          class="contact col-12 col-sm-6 col-lg-3 mb-5 d-flex flex-column align-items-center"
-        >
+        <div class="contact col-12 col-sm-6 col-lg-3 mb-5 d-flex flex-column align-items-center">
           <h5>Contact</h5>
           <a class="pt-3" href="tel:+998995252284">+998 99 525-22-84</a><br />
-          <a href="mailto:ziyodillazokirkhujayev@gmail.com" target="_blank"
-            >ziyodillazokirkhujayev@gmail.com</a
-          ><br />
-          <a
-            href="https://github.com/Mibrohimbek/control-work"
-            target="_blank"
-            >www.portfolio.com</a
-          ><br />
+          <a href="mailto:ziyodillazokirkhujayev@gmail.com" target="_blank">ziyodillazokirkhujayev@gmail.com</a><br />
+          <a href="https://github.com/ZiyodillaDev/exam2" target="_blank">www.portfolio.com</a><br />
           <address>
             <a href="https://goo.gl/maps/bzSXT1CkADw9AmSk8" target="_blank">
-              Tashkent , Uzbekistan</a
-            ><br />
+              Tashkent , Uzbekistan</a><br />
           </address>
         </div>
       </div>
@@ -514,6 +491,7 @@
     window.onscroll = function () {
       scrollFunction();
     };
+
     function scrollFunction() {
       if (document.documentElement.scrollTop > 100) {
         document.getElementById("navbar").classList.add("navbar-shrink");

@@ -179,9 +179,9 @@ footer .social-medias .logo {
 footer .social-medias .contact-me {
   margin-top: 50px;
 }
-footer .social-medias .contact-me .github-icon {
+footer img {
   width: 35px;
-  height: 35px;
+  height: 30px;
 }
 
 header {
