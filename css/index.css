@@ -197,6 +197,38 @@ button {
   padding-bottom: 80px;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dissapear {
+  -webkit-animation: vanish 5s;
+          animation: vanish 5s;
+}
+
+@-webkit-keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999999;
+  }
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999999;
+  }
+}
 /*FONTS*/
 * {
   margin: 0;
