@@ -12,7 +12,14 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
+
+<div class="loader_bg">
+  <div class="loader">
+  </div>
+</div>
+<div class="box-area">
   <header class="sticky-top" id="navbar">
+    <div class="wrapper">
     <div class="container-sm">
       <nav id="navbar-example2" class="navbar navbar-expand-lg justify-content-between">
         <div class="d-flex align-items-center gap-2">
@@ -38,14 +45,15 @@
               <li class="nav__item">
                 <a class="nav__link active text-white-50" aria-current="page" href="#home">Home</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link text-white-50" href="#about">About</a>
-              </li>
+
               <li class="nav__item">
                 <a class="nav__link text-white-50" href="#service">Service</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link text-white-50" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link text-white-50" href="#about">About</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link text-white-50" href="#blog">Blog</a>
@@ -60,6 +68,7 @@
         </div>
       </nav>
     </div>
+  </div>
   </header>
 
   <main>
@@ -297,6 +306,31 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-sm-12 pt-5 pb-5 ">    
+                    <img class="person" src="./images/hero-img.jpg" alt="person">
+                </div>
+                <div class="col-xl-5 col-sm-12 pt-5 mt-5 hero">
+                    <img src="./images/comma.png" alt="comma">
+                    <p class="text-white mt-4 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Managed
+                        Services team acts like an extension of yours to expertly
+                        respond to any and all feedback, and scan and evaluate reviews for
+                        any legal concerns, profanity or slander, or any policy violations of</p>
+                    <p class="text-white mt-5 ">
+                        community and content. Services, analytics and reports can be
+                        customized by location, project or initiative.</p>
+                    <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="company">Ziyodilla Zokirkhujayev - Student at Najot Talim</p>
+                    <div class="d-flex gap-4"><a href="#"><img class="carousel-items pb-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                      src="./images/carousel-left.svg" alt="sign"></a>
+                  <a href="#"><img class="carousel-items pb-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    src="./images/carousel-right.svg" alt="sign"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
       <section data-aos="fade-up" data-aos-duration="3000" id="blog">
         <div id="carousel">
           <div class="container-sm carousel-container">
@@ -343,43 +377,6 @@
                   <div class="carousel-item-card d-md-flex">
                     <div class="carousel-left">
                       <img src="./images/carousel-img2.jpg" class="d-block w-100 w-lg-50" alt="..." />
-                      <h3 class="pt-5">
-                        How This Agency Helped My Business And Career Journey?
-                      </h3>
-                      <p class="text-black-50">
-                        A successful marketing plan relies heavily on the pulling-power of advertising
-                        copy. writing result-oriented ad copy is dificult, as it must appeal to, entice,
-                        and onviced consumers tp action.
-                      </p>
-                      <div class="d-flex justify-content-between">
-                        <div class="categories">
-                          <a class="text-black-50 px-3 py-3" href="#">PUBLISHED IN</a>
-                          <a class="text-black-50 px-3 py-3" href="#">MARKETING</a>
-                          <a class="text-black-50 px-3 py-3" href="#">CATEGORY</a>
-                        </div>
-                        <div>
-                          <p class="text-black-50 date">05 jun, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item-content w-100 w-md-50 pt-2 ">
-                      <h2 class="fw-bold">
-                        My Blog
-                        And News
-                      </h2>
-                      <p class="text-black-50 pt-4 pb-5">
-                        If It’s abillboard ad, you’ll need a super
-                        catchy headline due to the speed at
-                        which people will pass.
-                      </p>
-                      <a href="https://t.me/ZIYODILLAKHUJA">Go To The Blog</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-item-card d-md-flex">
-                    <div class="carousel-left">
-                      <img class="d-block w-100 w-lg-50" src="./images/blog3.webp" alt="..." />
                       <h3 class="pt-5">
                         How This Agency Helped My Business And Career Journey?
                       </h3>
@@ -487,6 +484,13 @@
       </div>
     </div>
   </footer>
+</div>
+  <script src="./js/jquerry.js"></script>
+  <script>
+    setTimeout(function(){
+  $('.loader_bg').fadeToggle;
+    },1500);
+  </script>
   <script>
     window.onscroll = function () {
       scrollFunction();

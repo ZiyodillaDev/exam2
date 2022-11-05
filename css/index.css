@@ -58,9 +58,9 @@ button {
 }
 @media screen and (max-width: 768px) {
   #carousel .carousel-control-prev {
-    top: 15px;
-    right: 85px;
-    left: auto;
+    bottom: -55px;
+    right: auto;
+    left: 15px;
   }
 }
 #carousel .carousel-control-prev:hover > .carousel-control-prev-icon {
@@ -75,7 +75,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   #carousel .carousel-control-next {
-    top: 15px;
+    bottom: 15px;
     right: 15px;
     left: auto;
   }
@@ -127,6 +127,21 @@ button {
 .carousel-item-content a:hover {
   background: #ffa63a;
   color: white;
+}
+
+@media screen and (max-width: 595px) {
+  .carousel-left h3, .carousel-left p, .carousel-left a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .carousel-item-content p {
+    display: none;
+  }
+  .carousel-item-content a {
+    margin-top: 30px;
+  }
 }
 
 /*FONTS*/
@@ -471,12 +486,40 @@ body {
   height: 0%;
   width: 100%;
   transition: height 0.8s ease-out;
-  background: linear-gradient(to top, transparent -4%, #fa197f -10.96%, #fa197f 100%);
+  background: linear-gradient(to top, transparent -10%, #fa197f -10.96%, #fa197f 100%);
 }
 #portfolio .site:hover:before {
   height: 100%;
 }
 
+#about {
+  background-color: #043b4d;
+}
+#about .person {
+  width: 100%;
+}
+#about img {
+  padding-top: 80px;
+}
+#about .company {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #aabfc6;
+}
+
+.person {
+  max-width: 600px;
+  width: 100%;
+  height: 500px;
+}
+
 #blog {
   padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
