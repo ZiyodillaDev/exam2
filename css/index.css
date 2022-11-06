@@ -191,7 +191,7 @@ button {
 }
 
 #experiance .right-side {
-  margin-top: 300px;
+  margin-top: 300px !important;
 }
 
 #experiance .right-side .text {
@@ -210,19 +210,18 @@ button {
   height: 50px;
   border-radius: 50%;
   margin-left: -430px;
-  top: auto;
+  margin-top: 400px !important;
   bottom: auto;
-  top: 450px;
 }
 
 #experiance .right-side .carousel-control-next {
   left: calc(50% + 200px);
-  bottom: calc(-100% + 100px);
+  top: calc(-100% + 100px);
 }
 
 #experiance .right-side .carousel-control-prev {
   left: calc(50% + 100px);
-  bottom: calc(-50% + 100px);
+  top: calc(-100% + 100px);
 }
 
 .portrait {
@@ -604,7 +603,7 @@ button {
 }
 
 #experiance .right-side {
-  margin-top: 300px;
+  margin-top: 300px !important;
 }
 
 #experiance .right-side .text {
@@ -623,19 +622,18 @@ button {
   height: 50px;
   border-radius: 50%;
   margin-left: -430px;
-  top: auto;
+  margin-top: 400px !important;
   bottom: auto;
-  top: 450px;
 }
 
 #experiance .right-side .carousel-control-next {
   left: calc(50% + 200px);
-  bottom: calc(-100% + 100px);
+  top: calc(-100% + 100px);
 }
 
 #experiance .right-side .carousel-control-prev {
   left: calc(50% + 100px);
-  bottom: calc(-50% + 100px);
+  top: calc(-100% + 100px);
 }
 
 .portrait {
