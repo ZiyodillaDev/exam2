@@ -36,3 +36,27 @@ button {
 .mybtn:hover {
   background-color: $header-main;
 }
+
+@media screen and (max-width: 1105px) {
+  .mybtn {
+    right: 7% !important;
+    left: 93% !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .mybtn {
+    right: 10% !important;
+    left: 90% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mybtn {
+    right: 15% !important;
+    left: 85% !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .mybtn {
+  bottom: 0;
+  }
+}
