@@ -3,12 +3,16 @@ button {
 }
 
 .btn1 {
-  background: $btn-color;
+  background: transparent;
   border-radius: 25px;
   width: 140px;
   height: 60px;
   cursor: pointer;
   color: white;
+  transition: 0.5s;
+  &:hover{
+    background: $btn-color;
+  }
 }
 
 .btn2 {

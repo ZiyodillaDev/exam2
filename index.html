@@ -32,6 +32,7 @@
             <div>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" data-offset="0">
+    
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-start d-flex w-75 flex-lg-row align-items-center" tabindex="-1"
@@ -87,9 +88,9 @@
                     & Experience</h1>
                   <p class="text-white-50">A Product Design and Visual Designer in SF I”m Specialize in
                     UI/UX, Responsive web design, and visual Development. </p>
-                  <div class="links d-flex align-items-center gap-5">
+                  <div class="links d-flex align-items-center gap-2">
                     <button class="btn1">Hire Me</button>
-                    <a class="text-white" href="#portfolio">My Work</a>
+                    <a class="text-white btn1 d-flex align-items-center justify-content-center" href="#portfolio">My Work</a>
                   </div>
                 </div>
               </div>
@@ -187,7 +188,7 @@
                 suscipit
                 ex blandit
                 vitae. Pellentesque vel urna id massa sagittis luctus Fusce iaculis.</p>
-              <div class="row d-flex justify-content-center">
+              <div class="row d-flex justify-content-center g-5">
                 <div class="col-12 col-md-6 work">
                   <div class="site">
                     <div class="d-flex justify-content-center into">
@@ -331,32 +332,34 @@
                   <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <p class="text">Managed Services team acts like an extension of yours to expertly
+                        <p class="text-white">Managed Services team acts like an extension of yours to expertly
                           respond to any and all feedback, and scan and evaluate reviews for
                           any legal concerns, profanity or slander, or any policy violations of
 
                           community and content. Services, analytics and reports can be
                           customized by location, project or initiative.</p>
                       </div>
-                      <div class="carousel-item text">
+                      <div class="carousel-item text-white">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore autem sunt est doloremque
                           cumque id delectus. Tempore pariatur architecto autem in, ea, totam eaque unde aliquam dolores
                           nobis animi quod et eos impedit adipisci ratione similique error. Asperiores, mollitia
                           corrupti? Quibusdam porro quis sint labore quasi veritatis eligendi rem minus!</p>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                      data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                      data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
-                  <p class="dev-name">ZiyodillaDev - Student at Najot Ta'lim</p>
+                  <p class="dev-name text-white">ZiyodillaDev - Student at Najot Ta'lim</p>
+                  <div class="d-flex gap-4 about-carousel">
+                    <button class="prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -459,7 +462,12 @@
         </section>
     </main>
     <div class="container-sm">
-      <a class="mybtn rounded-circle fixed-bottom d-flex justify-content-center align-items-center text-white" href="#"><img class="w-50 h-50`" src="./images/up.svg" alt="up"></a>
+      <a href="#" class="to-top">
+        <div class="br"></div>
+        <div class="g"></div>
+        <div class="o"></div>
+        <div class="l"></div>
+      </a>
       </div>
     <hr>
     <footer>
@@ -558,6 +566,17 @@
       loader.classList.add("dissapear");
     }
   </script> 
+  <script>
+    const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () =>{ 
+    if (window.pageYOffset > 300) {
+        toTop.classList.add("active");
+    } else{
+        toTop.classList.remove("active");
+    }
+})
+  </script>
 </body>
 
 </html>

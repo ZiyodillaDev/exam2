@@ -24,38 +24,48 @@ header {
 
     .nav {
         &__link {
+            position: relative;
             font-size: 17px;
             transition: $control-transition-time;
+            padding-bottom: 3px !important;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 0%;
+                left: 0;
+                bottom: 0;
+                transition: 0.5s;
+                background: #fff;
+            }&:hover::after{
+                width: 100%;
+            }
             &:hover{
-                text-decoration: underline;
                 color: white !important;
             }
         }
 
         @media screen and(max-width:990.999px) {
             &__link {
-                font-size: 21px;
+                font-size: 20px;  
             }
         }
     }
 
     & .active {
         color: white !important;
-        background: transparent !important;
-        text-decoration: underline !important;
     }
 
     & .btn {
         &__call {
-            background: $call-btn !important;
+            background: transparent !important;
             border: none;
             border-radius: 25px;
             transition: $control-transition-time;
-            
+            border: 1px solid $header-main !important;
 
             &:hover {
-                background-color: transparent !important;
-                border: 1px solid $call-btn;
+                background-color: $call-btn !important;
             }
         }
      }
@@ -65,4 +75,11 @@ header {
     background-color: #0a475a;
     box-shadow: 0 0 8px #086e8d;
     padding: 5px !important;
+}
+
+    .btn-close:focus,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }

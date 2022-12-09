@@ -2,13 +2,28 @@ footer{
     padding-top: 50px;
     margin-top: 100px;
     background: #E5E5E5;
-        a{
+       .pages a,.services a,.contact a{
             color: #787878;
             display: inline-block;
+            transition: $control-transition-time;
+            position: relative;
+            padding-bottom: 3px !important;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 0%;
+                left: 0;
+                bottom: 0;
+                transition: 0.5s;
+                background: $header-main;
+            }&:hover::after{
+                width: 100%;
+            }
 
             &:hover{
                 color: black;
-                font-weight: 500;
+                font-weight: 600;
             }
         }
 

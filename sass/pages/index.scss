@@ -7,15 +7,10 @@
 @import "../components/carousel";
 @import "../components/loader";
 
-.btn-close:focus,
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-  border: none;
-}
 
 body {
   background: #E5E5E5 !important;
+  overflow-x: hidden;
 }
 
 #home {
@@ -231,7 +226,7 @@ body {
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
-    background-size: 90% 100%;
+    background-size: cover;
     background-position: center;
 
     & a {
@@ -254,22 +249,31 @@ body {
 
   & .site2 {
     background-image: url("../../images/work2.png");
+    background-size: cover;
+
   }
 
   & .site3 {
     background-image: url("../../images/work3.png");
+    background-size: cover;
+
   }
 
   & .site4 {
     background-image: url("../../images/work4.png");
+    background-size: cover;
+
   }
 
   & .site5 {
     background-image: url("../../images/work5.png");
+    background-size: cover;
+
   }
 
   & .site6 {
     background-image: url("../../images/work6.png");
+    background-size: cover;
   }
 
   & .work {
@@ -280,10 +284,11 @@ body {
     &h3,
     a {
       color: $header-main;
+      transition: $control-transition-time;
     }
 
     & a:hover {
-      color: $btn-color;
+      color: $btn-color !important;
     }
 
     & p {
@@ -300,12 +305,18 @@ body {
     transition: height 0.8s ease-out;
     background: linear-gradient(to top,
         transparent -10%,
-        #fa197f -10.96%,
-        #fa197f 100%);
+        $call-btn -10.96%,
+        $call-btn 100%);
   }
 
   .site:hover:before {
     height: 100%;
+  }
+}
+
+.toright:hover{
+  & a{
+    color: $btn-color !important;
   }
 }
 
@@ -361,4 +372,77 @@ body {
     border-radius: 50% !important;
     background-color: transparent !important;
   }
+}
+
+// Backtop
+.to-top {
+  position: relative;
+  background-color: black;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: blue;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.br {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(212, 42, 42);
+  border-radius: 90px 10px 90px 5px;
+}
+
+.g {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(42, 150, 212);
+  border-radius: 5px 90px 5px 90px;
+}
+
+.o {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(42, 212, 99);
+  border-radius: 70px 5px 70px 5px;
+}
+
+.l {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(79, 42, 212);
+  border-radius: 5px 70px 5px 70px;
+}
+
+// scroll
+body::-webkit-scrollbar{
+  width:12px;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background: $call-btn;
+  height: calc(100vh - 300px);
+
+}
+body::-webkit-scrollbar-track{
+ background: $btn-color;
 }
