@@ -1065,6 +1065,22 @@ body {
   background-image: url("../../images/work6.png");
   background-size: cover;
 }
+#portfolio .site7 {
+  background-image: url("../../images/work7.png");
+  background-size: cover;
+}
+#portfolio .site8 {
+  background-image: url("../../images/work8.png");
+  background-size: cover;
+}
+#portfolio .site9 {
+  background-image: url("../../images/work9.png");
+  background-size: cover;
+}
+#portfolio .site10 {
+  background-image: url("../../images/work10.png");
+  background-size: cover;
+}
 #portfolio .work .inner {
   padding: 0 30px;
 }

@@ -208,6 +208,7 @@ body {
 #portfolio {
   padding-top: 50px;
   padding-bottom: 200px;
+  
 
   & .portfolio {
     &__title {
@@ -273,6 +274,22 @@ body {
 
   & .site6 {
     background-image: url("../../images/work6.png");
+    background-size: cover;
+  }
+  & .site7 {
+    background-image: url("../../images/work7.png");
+    background-size: cover;
+  }
+  & .site8 {
+    background-image: url("../../images/work8.png");
+    background-size: cover;
+  }
+  & .site9 {
+    background-image: url("../../images/work9.png");
+    background-size: cover;
+  }
+  & .site10 {
+    background-image: url("../../images/work10.png");
     background-size: cover;
   }
 
